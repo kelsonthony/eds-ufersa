@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=https://bibliotecas.ufersa.edu.br/"
+    type="image/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style-ufersa-form.css">
+  <title>UFERSA Busca Integrada</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <blockquote class="blockquote">
+        <p class="mb-0">Busca Integrada UFERSA.</p>
+      </blockquote>
+
+      <form action="//search.ebscohost.com/login.aspx" method="get" target="_blank" data-js="filter-custom"
+        name="customform" accept-charset="UTF-8">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <select class="btn btn-default dropdown-toggle" name="select" data-js="select">
+              <option selected="selected" value="" data-js="option_filter" name="option_filter">livre</option>
+              <option name="option_filter" value="SU ">assunto</option>
+              <option name="option_filter" value="AU ">autor</option>
+              <option name="option_filter" value="TI ">título</option>
+            </select>
+            <input type="hidden" id="hiddenirs" data-js="hiddencustom" value="">
+            <input type="hidden" name="search_prefix" value="">
+            <input type="hidden" name="direct" value="true">
+            <input type="hidden" name="scope" value="site">
+            <input type="hidden" name="site" value="eds-live">
+            <input type="hidden" name="profile" value="eds">
+            <input type="hidden" name="authtype" value="ip,guest">
+            <input type="hidden" name="custid" value="ns016613">
+            <input type="hidden" name="groupid" value="main">
+            <input type="hidden" name="cli0" value="FT1">
+            <input type="hidden" name="clv0" value="Y">
+            <input type="hidden" name="cli1" value="RV">
+            <input type="hidden" name="clv1" value="N">
+            <input type="hidden" name="bquery" value="">
+          </div>
+          <input id="txtQuery" type="text" data-js="uquery" name="uquery" class="form-control"
+            placeholder="Títulos, autores, livros, bases de dados..." autocomplete="off">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit">Pesquisar</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://widgets.ebscohost.com/prod/customerspecific/ns016613/searchbox/js/autocomplete.js"></script>
+  <script type="text/javascript"
+    src="https://widgets.ebscohost.com/prod/customerspecific/ns016613/searchbox/js/new-filters.js"></script>
+</body>
+
+</html>

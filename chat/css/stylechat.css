@@ -1,0 +1,24 @@
+/***
+Mibew Only 
+***/
+#mibew-agent-button {
+
+  background: none repeat scroll 0 0;
+  -o-border-image: none;
+  border-image: none;
+  border-radius: 3em 0.5em 0.5em 3em;
+  border-width: medium;
+  font-weight: bold;
+  padding: 0.5em 0.5em 0.5em 2.5em;
+  right: 0;
+  text-align: left;
+  top: 50%;
+  z-index: 5;
+  margin: 0;
+  color: inherit;
+  position: fixed;
+
+}
+/***
+Mibew Only 
+***/
